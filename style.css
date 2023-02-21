@@ -101,3 +101,6 @@ select {
   font-size: inherit;
   font-family: var(--ff-primary-100);
 }
+
+.card {
+}
