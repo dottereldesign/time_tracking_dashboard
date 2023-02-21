@@ -102,5 +102,65 @@ select {
   font-family: var(--ff-primary-100);
 }
 
+body {
+  background-color: var(--clr-primary-100);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+}
+
 .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: min(100%, 375px);
+  margin-top: 16px;
+}
+
+.card_header {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--clr-primary-200);
+  padding: 16px 0 8px 0;
+  border-radius: 15px 15px 0 0;
+  padding: 16px 16px 0 16px;
+}
+
+.card_header img {
+  width: 21px;
+  height: 5px;
+}
+
+.card_header h3 {
+  color: white;
+  font-size: var(--fs-500);
+  font-weight: var(--fw-medium);
+}
+
+.card_content {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--clr-primary-200);
+  border-radius: 0 0 15px 15px;
+  padding: 0 16px 16px 16px;
+}
+
+.card_content p:first-child {
+  color: white;
+  font-size: var(--fs-700);
+  font-weight: var(--fw-light);
+}
+
+.card_content p:last-child {
+  color: var(--clr-primary-400);
+  font-size: var(--fs-400);
+  font-weight: var(--fw-regular);
 }
