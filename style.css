@@ -7,10 +7,10 @@
   --clr-primary-600: hsl(43, 84%, 65%);
   --clr-primary-700: hsl(246, 80%, 60%);
 
-  --clr-primary-100: hsl(226, 43%, 10%);
-  --clr-primary-200: hsl(235, 46%, 20%);
-  --clr-primary-300: hsl(235, 45%, 61%);
-  --clr-primary-400: hsl(236, 100%, 87%);
+  --clr-neutral-100: hsl(226, 43%, 10%);
+  --clr-neutral-200: hsl(235, 46%, 20%);
+  --clr-neutral-300: hsl(235, 45%, 61%);
+  --clr-neutral-400: hsl(236, 100%, 87%);
 
   --ff-primary-100: "Rubik", sans-serif;
 
@@ -103,7 +103,7 @@ select {
 }
 
 body {
-  background-color: var(--clr-primary-100);
+  background-color: var(--clr-neutral-100);
 }
 
 main {
@@ -124,8 +124,55 @@ main {
   margin-top: 24px;
 }
 
+.card_clr {
+  width: 100%;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 1;
+  border-radius: 15px 15px 0 0;
+}
+
+.card_clr-work {
+  background-color: var(--clr-primary-100);
+}
+
+.card_clr-play {
+  background-color: var(--clr-primary-200);
+}
+
+.card_clr-study {
+  background-color: var(--clr-primary-300);
+}
+
+.card_clr-exercise {
+  background-color: var(--clr-primary-400);
+}
+
+.card_clr-social {
+  background-color: var(--clr-primary-500);
+}
+
+.card_clr-self {
+  background-color: var(--clr-primary-600);
+}
+
 .card_container {
   width: 100%;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 1;
+}
+
+.card_content {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--clr-neutral-200);
+  border-radius: 0 0 15px 15px;
+  padding: 0 16px 16px 16px;
 }
 
 .card_header {
@@ -133,7 +180,7 @@ main {
   width: 100%;
   align-items: center;
   justify-content: space-between;
-  background-color: var(--clr-primary-200);
+  background-color: var(--clr-neutral-200);
   padding: 16px 0 8px 0;
   border-radius: 15px 15px 0 0;
   padding: 16px 16px 0 16px;
@@ -150,16 +197,6 @@ main {
   font-weight: var(--fw-medium);
 }
 
-.card_content {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: space-between;
-  background-color: var(--clr-primary-200);
-  border-radius: 0 0 15px 15px;
-  padding: 0 16px 16px 16px;
-}
-
 .card_content p:first-child {
   color: white;
   font-size: var(--fs-700);
@@ -167,7 +204,7 @@ main {
 }
 
 .card_content p:last-child {
-  color: var(--clr-primary-400);
+  color: var(--clr-neutral-400);
   font-size: var(--fs-400);
   font-weight: var(--fw-regular);
 }
